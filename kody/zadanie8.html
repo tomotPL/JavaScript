@@ -1,0 +1,22 @@
+<textarea rows="70" cols="200">
+<html>
+<body>
+<div style="color:green;font-size:47px;">
+ <script language="JavaScript">
+var D1_LEN=prompt("1 dzień","");
+var D2_LEN=prompt("2 dzień","");
+ var a=parseFloat(D1_LEN);
+ var b=parseFloat(D2_LEN);
+ if (a<=b && 1<=a && b<=31) {
+    suma=(b-a)*86400;
+    document.write("Od ",a," do ",b," minęło ",suma," sekund. " );
+ }
+ else {
+    document.write("Podano błędne dane!");
+ }
+ 
+ </script>
+</div>
+</body>
+</html>
+</textarea>
