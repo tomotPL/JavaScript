@@ -1,0 +1,21 @@
+<html>
+<body>
+<div style="font-family: Comic Sans MS; color: darkgreen;">
+ <script language="JavaScript">
+var x1_len=prompt("x1=");
+x1_len=parseFloat(x1_len);
+var x2_len=prompt("x2=");
+x2_len=parseFloat(x2_len);
+
+
+document.write("x1="+x1_len);
+document.write("   x2="+x2_len,"<br>");
+
+
+document.write("y=",3*Math.pow(x1_len,6/8),"<br>");
+document.write("y1=",2*Math.cos(x1_len)+2*Math.sin(x2_len),"<br>");
+document.write("y3=",Math.pow((Math.pow(x1_len,5)+2*Math.pow(x2_len,4)),1/3)*Math.abs(x1_len-x2_len),"<br>");
+ </script>
+</div>
+</body>
+</html>

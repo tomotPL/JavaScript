@@ -1,0 +1,24 @@
+<html>
+<body>
+<div style="font-family: Comic Sans MS; color: darkgreen;">
+ <script language="JavaScript">
+var No_len=prompt("No=");
+No_len=parseFloat(No_len);
+var t_len=prompt("t=");
+t_len=parseFloat(t_len);
+var T12_len=prompt("T1/2=");
+T12_len=parseFloat(T12_len);
+var lmbd_len=Math.log(2)/T12_len;
+lmbd_len=parseFloat(lmbd_len);
+var N_len=No_len*Math.exp(-lmbd_len*t_len) 
+N_len=parseFloat(N_len);
+
+document.write("No="+No_len+" sztuk"+"<br>");
+document.write("t="+t_len+" lat"+"<br>");
+document.write("T1/2= "+T12_len+" lat"+"<br>");
+document.write("Lambda="+lmbd_len.toFixed(7)+" 1/rok"+"<br>");
+document.write("N="+N_len.toFixed(7)+" sztuk"+"<br>");
+ </script>
+</div>
+</body>
+</html>
