@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>
+ 
+</title>
+ <script language="JavaScript">
+function pole_lenkiewicz(a_dana_len,b_dana_len)
+{
+ a_len=parseFloat(a_dana_len);
+ b_len=parseFloat(b_dana_len);
+ wyprowadz_pole_len=a_len*b_len;
+ document.getElementsByName('pole')[0].value=wyprowadz_pole_len.toFixed(2); /* na dokument */
+ alert("Pole="+wyprowadz_pole_len.toFixed(2)+" cm^2"); /*do okna Alert */
+ pole.innerHTML="Pole="+wyprowadz_pole_len.toFixed(2)+" cm^2"+"<br>";  /* do tabeli */
+}
+function obwod_lenkiewicz(a_dana_len,b_dana_len)
+{
+ a_len=parseFloat(a_dana_len);
+ b_len=parseFloat(b_dana_len);
+ wyprowadz_obwod_lenkiewicz=2*a_len+2*b_len;
+ document.getElementsByName('obw')[0].value=wyprowadz_obwod_lenkiewicz.toFixed(2);
+ alert("obwód="+wyprowadz_obwod_lenkiewicz.toFixed(2)+" cm");
+ obw.innerHTML="obwód="+wyprowadz_obwod_lenkiewicz.toFixed(2)+"cm";
+}
+ </script>
+</head>
+<body>
+Oblicczanie pola i obwodu prostokąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="pole_lenkiewicz(this.a_dana_len.value,this.b_dana_len.value);
+obwod_lenkiewicz(this.a_dana_len.value,this.b_dana_len.value);return false">
+Podaj a
+<input size="6" name="a_dana_len">
+Podaj b
+<input size="6" name="b_dana_len">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+pole=
+<input size="6" name="pole">
+obwod=
+<input size="6" name="obw">
+</form>
+<table>
+<tr id="pole"></tr>
+<tr id="obw"></tr>
+</table>
+</body>
+</html>
