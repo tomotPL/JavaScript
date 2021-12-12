@@ -6,16 +6,16 @@
  <script language="JavaScript">
 function wysokosc_len(odl,s)
 {
- odl_pro=parseFloat(odl)//podstawa
- s_pro=parseFloat(s)//przekatna
+ odl_len=parseFloat(odl)//podstawa
+ s_len=parseFloat(s)//przekatna
  V_wynik=Math.sqrt(Math.pow(odl,2)-Math.pow(s,2))
  document.getElementsByName('drabina')[0].value=V_wynik.toFixed(2); /* na dokument */
  pokaz1.innerHTML="Drabina="+V_wynik.toFixed(2);  /* do tabeli */
 }
 function tagens_len(odl1,s1)
 {
-odl_pro=parseFloat(odl1)//podstawa
-s_pro=parseFloat(s1)//przekatna
+odl_len=parseFloat(odl1)//podstawa
+s_len=parseFloat(s1)//przekatna
  //ctg
  wynik=Math.atan2(odl1,s1).toFixed(1)
  wynik_a=180*wynik
@@ -30,9 +30,9 @@ Obliczanie odległości od Artura i dominika i kąta
 <br> <br>
 <form name="formularz" action="..." onsubmit="wysokosc_len(this.szerokosc.value,this.przekatna.value); 
 tagens_len(this.szerokosc.value,this.przekatna.value);return false"> 
-Podaj odległośc
+Odległość:
 <input size="6" name="szerokosc">
-Podaj drodę=
+Droga:
 <input size="6" name="przekatna">
 <br>
 <br>
