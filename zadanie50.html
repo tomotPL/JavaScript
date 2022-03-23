@@ -1,0 +1,29 @@
+
+<html>
+    <head>
+    <script type="text/javascript">
+    function logowanie(dane)
+    {
+     if(dane.haslo.value=="Duzexd1313")
+     {
+     window.location.replace("zadanie47.html");
+     }
+     else
+     {
+     alert("Zle haslo!");
+     window.location.replace("");
+     }
+    }
+    </script>
+    </head>
+    <body>
+     <form name="formularz">
+    Hasło: <input type="password" name="haslo"/><br><br>
+    <input type="button" value="Logowanie..." onClick="logowanie(this.form)"/><br><br>
+     </form>
+    </body>
+    </html>
+
+
+
+    
