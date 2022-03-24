@@ -1,0 +1,23 @@
+<html>
+<head>
+<script type="text/javascript">
+function ll(dane)
+{
+ if(dane.login.value=="Lenkiewicz"&dane.haslo.value=="Lukasz")
+ {
+ window.location.replace("obliczenia.html");
+ }
+ else
+ {
+alert("zle haslo") }
+}
+</script>
+</head>
+<body>
+ <form name="formularz">
+Login: <input type="text" name="login"/><br><br>
+Hasło: <input type="password" name="haslo"/><br><br>
+<input type="button" value="Zaloguj..." onClick="ll(this.form)"/><br><br>
+ </form>
+</body>
+</html>
